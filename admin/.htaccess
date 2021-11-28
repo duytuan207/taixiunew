@@ -1,0 +1,13 @@
+
+RewriteEngine On
+RewriteRule ^get/(.*)$ data/index.php?get=$1 [L]
+RewriteRule ^d/(.*)$ data/index.php?data=$1 [L]
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^user$ function/index.php [L]
+RewriteRule ^user-play$ function/play.php [L]
+RewriteRule ^user-his$ function/lode.php [L]
+RewriteRule ^nodejsgame$ function/game.php [L]
+RewriteRule ^dangky$ type/dangky.php [L]
+RewriteRule ^dangnhap$ type/dangnhap.php [L]
+RewriteRule ^game/(.*)$ type/$1.php [L]
+RewriteRule ^trochoi/(.*)$ model/$1.php [L]
+
